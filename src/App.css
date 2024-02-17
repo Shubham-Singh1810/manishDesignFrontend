@@ -1,38 +1,141 @@
-.App {
-  text-align: center;
+*{
+  margin: 0px;
+  padding: 0px;
+}
+.fontMono{
+  font-family: monospace;
+}
+.fontCursive{
+  font-family: cursive;
+}
+/* general setting  */
+/* navbar start */
+.brandImg img{
+  height: 40px;
+}
+.navBg{
+  background: #edede9;
+}
+/* navbar end */
+/* banner start */
+.bannerImg{
+  height: 50vh;
+}
+.dropDownWidth{
+  width: 650px;
+}
+.dropdown-menu{
+  left: -200% !important;
+  margin-top: 1.9rem !important;
+}
+.searchProductContainer{
+  height: 50vh;
+  background: rgba(0, 0, 0, 0.1);
+  position: relative;
+  width: 100%;
+  bottom: 50vh;
+  margin-bottom: -50vh;
+}
+/* banner end */
+/* home start */
+.newsDiv{
+  background-color:whitesmoke;
+  color: gray;
+  font-family: sans-serif;
+  font-weight: 700;
+}
+.cursor{
+  cursor: pointer;
+}
+.vh80{
+  height: 85vh;
+}
+.myProvileNav:hover, .myProfileActive{
+background: wheat !important;
+}
+.homeHeader b {
+  color: #000;
+  font-weight: 400;
+  cursor: pointer;
+  border: 1px solid #4D4D4D;
+  padding: 3px 0px;
+  border-radius: 3px;
+  box-shadow: 1px 1px 2px black;
+}
+.homeHeader b:hover, .activeCategoryItem{
+  background-color: #4C4C4C;
+  color: white !important;
+}
+/* home end */
+/* card start */
+.marginHorizontal2{
+  margin: 0 2px;
+}
+.productCard{
+  box-shadow: 2px 2px 9px black;
+  transition: transform 1s;
+}
+.productCard:hover{
+  transform: scale(1.05);
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* card end */
+.whyChooseUsHeading{
+  color: orangered;
+  font-family: sans-serif;
+  font-weight: 600;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.heightLg520Md100P{
+  height: 320px;
+}
+.midLine{
+  width: 60px;
+  height: 2.5px;
+  background-color:maroon;
+  position: relative;
+  top: 20px;
+}
+.activeNav{
+  color: blue !important;
+}
+.authSlidePic{
+  position: absolute;
+}
+.authSlidePic img{
+  height: 85vh;
+}
+.moveRight {
+  right: 0%;
+  animation: moveRight 1s ease-in;
+}
+@keyframes moveRight {
+  0% {
+    right: 50%;
+  }
+  100% {
+    right: 0%;
   }
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.moveLeft {
+  right: 50%;
+  animation: moveLeft 1s ease-in;
 }
-
-.App-link {
-  color: #61dafb;
+@keyframes moveLeft {
+  0% {
+    right: 0%;
+  }
+  100% {
+    right: 50%;
+  }
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.provileAvtar img{
+  height: 55px;
+  width: 55px;
+  border-radius: 50%;
+  border: .5px dashed gray;
+}
+.checkPopularBg{
+  background: linear-gradient(to bottom left, #990099 0%, #ff0066 100%), 
+            linear-gradient(to top left, #0000ff 0%, #000066 100%), 
+            linear-gradient(to right, #006600 0%, #00cc00 100%);
 }

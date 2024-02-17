@@ -1,0 +1,48 @@
+@media only screen and (max-width: 500px) {
+    .bannerImg{
+        height: 70vh;
+    }
+    .searchProductContainer{
+        height: 70vh;
+        background: rgba(0, 0, 0, 0.5);
+        position: relative;
+        width: 100%;
+        bottom: 70vh;
+        margin-bottom: -70vh;
+      }
+      .dropDownWidth{
+        width: 100%;
+      }
+      .dropdown-menu{
+        left: -200% !important;
+        margin-top: 1rem !important;
+      }
+      .homeHeader {
+        overflow-x: auto;
+        white-space: nowrap;
+        width: 100%; /* Set the width of the container as needed */
+      }
+      
+      .homeHeader b {
+        display: inline-block;
+        padding: 0 10px; /* Adjust the padding as needed */
+        white-space: nowrap;
+        cursor: pointer;
+      }
+      .heightLg520Md100P{
+        height: 100% ;
+      }
+      .midLine{
+        width: 40px;
+        height: 2.5px;
+        background-color:maroon;
+        position: relative;
+        top: 15px;
+      }
+      .width95{
+        width: 95%;
+      }
+      .vh80{
+        height: 100vh;
+      }
+}

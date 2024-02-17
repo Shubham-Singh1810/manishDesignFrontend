@@ -1,24 +1,21 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import "./Responsive.css";
+import HomeSlider from "./Components/HomeSlider";
+import Navbar from "./Components/Navbar";
+import Home from "./pages/Home";
+import Footer from "./Components/Footer";
+import AboutUs from "./pages/AboutUs";
+import ContactUs from "./pages/ContactUs";
+import AllRoute from "./Routes/AllRoute";
+import { GlobalStateProvider } from "./GlobalProvider";
+import Dashboard from "./adminProtectedPage/Dashboard";
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <GlobalStateProvider>
+      <Navbar />
+      <AllRoute />
+      <Footer />
+    </GlobalStateProvider>
   );
 }
 
