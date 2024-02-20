@@ -332,7 +332,8 @@ function ProductList() {
               />
             </div>
             <div className="modal-footer">
-            {setProductFormType == "Add"? <button
+            {productFormType == "Add"?
+             <button
                 type="button"
                 className="btn btn-primary"
                 onClick={handleAddProduct}
