@@ -1,8 +1,8 @@
 import { useEffect, useState } from "react";
 import { addToCart, getCartList } from "../services/product.service";
 import { ToastContainer, toast } from "react-toastify";
-import {addOrderApi} from "../services/user.service"
 import "react-toastify/dist/ReactToastify.css";
+import {addOrderApi} from "../services/user.service"
 import { useGlobalState } from "../GlobalProvider";
 function Card({ myCartList, value }) {
   const { setGlobalState, globalState } = useGlobalState();
